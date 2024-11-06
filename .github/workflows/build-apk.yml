@@ -1,0 +1,30 @@
+name: Build and Upload APK
+
+on:
+  push:
+    branches:
+      - master  # Replace 'main' with your default branch name
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'zulu'
+          java-version: '11'  # Ensure this matches your project’s Java version
+
+      - name: Build APK
+        run: ./gradlew assembleDebug  # Adjust the build variant if needed
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v3
+        with:
+          name: TrillingTestDoofblinden.apk
+          path: app/build/outputs/apk/debug/app-debug.apk  # Update the path if your APK is elsewhere
