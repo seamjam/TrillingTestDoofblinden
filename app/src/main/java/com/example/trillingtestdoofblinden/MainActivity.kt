@@ -59,16 +59,16 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MainScreen(onVibrate: (LongArray) -> Unit) {
     val vibrationPatterns = listOf(
-        "Bewoner 1" to longArrayOf(0, 100, 400, 100, 200),         // Korte trilling, lange pauze, korte trilling
-        "Bewoner 2" to longArrayOf(0, 800, 200, 800),              // Twee lange trillingen met korte pauze
-        "Bewoner 3" to longArrayOf(0, 300, 100, 300, 100, 300),    // Snel herhaalde korte trillingen
-        "Bewoner 4" to longArrayOf(0, 1500),                       // Eén hele lange trilling
-        "Bewoner 5" to longArrayOf(0, 100, 100, 100, 100, 500),    // Vier korte trillingen gevolgd door een langere
-        "Bewoner 6" to longArrayOf(0, 100, 50, 100, 50, 100, 50, 100, 400), // Meerdere korte, dan een langere pauze
-        "Bewoner 7" to longArrayOf(0, 200, 200, 200, 200, 1000),   // Herhalende trilling, dan lange trilling
-        "Bewoner 8" to longArrayOf(0, 400, 400, 400, 400),         // Regelmatige middelmatige trillingen
-        "Bewoner 9" to longArrayOf(0, 100, 200, 100, 200, 100, 500), // Verspringende korte en lange trillingen
-        "Bewoner 10" to longArrayOf(0, 1000, 100, 1000)            // Lange trilling, korte pauze, weer lange trilling
+        "Trilling 1" to longArrayOf(0, 100, 400, 100, 200),         // Korte trilling, lange pauze, korte trilling
+        "Trilling 2" to longArrayOf(0, 800, 200, 800),              // Twee lange trillingen met korte pauze
+        "Trilling 3" to longArrayOf(0, 300, 100, 300, 100, 300),    // Snel herhaalde korte trillingen
+        "Trilling 4" to longArrayOf(0, 1500),                       // Eén hele lange trilling
+        "Trilling 5" to longArrayOf(0, 100, 100, 100, 100, 500),    // Vier korte trillingen gevolgd door een langere
+        "Trilling 6" to longArrayOf(0, 100, 50, 100, 50, 100, 50, 100, 400), // Meerdere korte, dan een langere pauze
+        "Trilling 7" to longArrayOf(0, 200, 200, 200, 200, 1000),   // Herhalende trilling, dan lange trilling
+        "Trilling 8" to longArrayOf(0, 400, 400, 400, 400),         // Regelmatige middelmatige trillingen
+        "Trilling 9" to longArrayOf(0, 100, 200, 100, 200, 100, 500), // Verspringende korte en lange trillingen
+        "Trilling 10" to longArrayOf(0, 1000, 100, 1000)            // Lange trilling, korte pauze, weer lange trilling
     )
 
 
